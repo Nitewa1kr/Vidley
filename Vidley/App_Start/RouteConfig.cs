@@ -13,6 +13,9 @@ namespace Vidley
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //AttributeRoutes
+            routes.MapMvcAttributeRoutes();
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
